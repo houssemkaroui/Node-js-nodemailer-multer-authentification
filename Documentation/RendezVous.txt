@@ -1,0 +1,92 @@
+
+**********Rendez Vous
+* Setup:
+Done By  Wiem REBAH ,  5:56 PM 25/07/2019
+
+---------------------
+
+Status : Rendez vous confirmé de la part de talent ou pas 
+//checkbox
+"status": "disapproved" or "approved" 
+Format Date 
+ "Wed, Jul 27, 2019 08:32 PM"
+
+---------------------
+une @ email pour le test
+service : gmail
+tsunamiittest@gmail.com 
+tsunami123*
+---------------------
+// CREATE Rendez-Vous + Mail de confirmation de rendezVous 
++  2 mail  ( avant 2 jours et avant 24h )
+
+http://localhost:3000/restapi/rendez
+//Params
+    idTalent: ,
+    responsable: ,
+    type: ,
+    remarque: ,
+    dateDeCreation: , //par defaut date.now
+    dateDeRendezVous:
+
+// Pour l'envoi de mail auto 
+    dateDeRendezVous: //deja utilisé dans le POST
+    username: //username du talent
+    email: //@email du talent
+
+---------------------
+
+//GET all rendez-vous
+http://localhost:3000/restapi/rendez
+
+---------------------
+
+// DELETE rendez-vous By Id
+http://localhost:3000/restapi/rendez/:idRendezVous
+
+
+----------------------
+
+// GET RendezVous By Talent Id
+http://localhost:3000/restapi/rendez/rendi/:idTalent
+
+----------------------
+//Update Rendez vous + Mail d'information d'update si le rendez vous est confirmé ou  Mail de confirmation  si le rendez vous n'est confirmé
+ + 2 Mail de Rappel avant 2jours et 24 heures 
+http://localhost:3000/restapi/rendez/:idRendezVous
+
+    responsable: ,
+    type: ,
+    remarque: ,
+    dateDeCreation: ,
+    dateDeRendezVous: ,
+     status :
+
+// Pour l'envoi de mail auto 
+    dateDeRendezVous: //deja utilisé dans le POST
+    username: //username du talent
+    email: //@email du talent
+
+----------------------
+//Update Status Rendez vous 
+http://localhost:3000/restapi/rendez/st/:idRendezVous
+"status": "disapproved" or "approved" 
+----------------------
+
+//Get Distinct  Type of  appointments
+http://localhost:3000/rendez/tp
+
+----------------------
+
+// GET All RendezVous By DateRendezVous
+http://localhost:3000/restapi/rendez/dateR/:dateRendezVous
+
+----------------------
+
+// GET RendezVous By Responsable
+http://localhost:3000/restapi/rendez/res/:resp
+
+===
+
+Made with love and wishes that you actually read this file.
+Good luck  <3

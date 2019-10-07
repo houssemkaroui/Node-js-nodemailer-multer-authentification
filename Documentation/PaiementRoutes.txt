@@ -1,0 +1,18 @@
+**post un paiement 
+http://localhost:3000/paiement/:idTalent
+
+**update paiement 
+http://localhost:3000/paiement/:id
+
+
+**delete paiement
+http://localhost:3000/paiement/:id
+
+** Get all paiements 
+http://localhost:3000/paiement
+
+**get paiement by id
+http://localhost:3000/paiement/:id
+
+**get all paiements d'un client 
+http://localhost:3000/paiement/:idTalent/paiements

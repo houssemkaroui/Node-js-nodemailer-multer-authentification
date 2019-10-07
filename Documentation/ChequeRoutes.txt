@@ -1,0 +1,22 @@
+
+**Post d'un cheque attribué à un client 
+http://localhost:3000/cheque/:idTalent
+
+
+**Update cheque
+http://localhost:3000/cheque/:id
+
+**Get all cheques
+http://localhost:3000/cheque
+
+** Get cheque By id 
+http://localhost:3000/cheque/:id
+
+**talent consulte son cheque 
+http://localhost:3000/cheque/:idTalent/chequi 
+
+
+**delete Cheque 
+http://localhost:3000/cheque/:id
+
+
